@@ -119,3 +119,54 @@ body {
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
+
+/* Caroucel */
+/* Card */
+.step h4{
+  color: #777777;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.step h5{
+  color: #333333;
+  font-family: "Sansation Bold", "Arial";
+}
+
+.step ul li{
+  color: #999;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.list-group-item {
+  border: none;
+}
+
+.shadow-no {
+  box-shadow: none;
+}
+
+.carousel-indicators li {
+  background-color: grey;
+}
+.carousel-indicators {
+  bottom: .5rem;
+}
+
+.p-05 li {
+  padding: .5rem 1.25rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(113, 200, 41);
+}
+
+.sline {
+  /* min-width: 1200px; */
+  width: 100%;
+  height: 43px;
+  background-image: url('../img/sline.png');
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  z-index: 5;
+}
