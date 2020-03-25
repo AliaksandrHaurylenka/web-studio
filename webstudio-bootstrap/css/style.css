@@ -26,7 +26,7 @@ body {
 }
 
 /* Navbar */
-.navbar {
+.users-navbar {
   box-shadow: none;
 }
 
@@ -145,19 +145,19 @@ body {
   box-shadow: none;
 }
 
-.carousel-indicators li {
+.users-carousel-indicators li {
   background-color: grey;
 }
-.carousel-indicators {
-  bottom: .5rem;
+.users-carousel-indicators {
+  bottom: .7rem;
 }
 
 .p-05 li {
   padding: .5rem 1.25rem;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.users-carousel-control-prev-icon,
+.users-carousel-control-next-icon {
   background-color: rgb(113, 200, 41);
 }
 
