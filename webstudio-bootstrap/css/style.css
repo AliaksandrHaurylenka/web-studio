@@ -170,3 +170,87 @@ body {
   background-repeat: repeat-x;
   z-index: 5;
 }
+
+/* Content main */
+#services h4 {
+  color: #323232;
+  font-family: "Sansation Bold", "Arial";
+}
+
+.line {
+  height: 28px;
+  margin: 5px auto;
+  background: url(../img/linef.png) center no-repeat; 
+}
+
+#services h6 {
+  color: #323232;
+  font-family: "Sansation Bold", "Arial";
+  background: url(../img/service_h3.png) center no-repeat;
+  background-size: contain;
+}
+
+#service_id {
+  margin: 30px auto;
+  display: block;
+  height: 258px;
+  background: url(../img/service_id.png) center no-repeat;
+  background-size: contain;
+  transition: all 0.3s ease;
+}
+
+#service_id:hover {
+  background-image: url(../img/service_id_h.png);
+  transition: all 0.3s ease;
+}
+
+#service_dev {
+  margin: 30px auto;
+  display: block;
+  height: 258px;
+  background: url(../img/service_dev.png) center no-repeat;
+  background-size: contain;
+  transition: all 0.3s ease;
+}
+
+#service_dev:hover {
+  background-image: url(../img/service_dev_h.png);
+  transition: all 0.3s ease;
+}
+
+#service_analytics {
+  margin: 30px auto;
+  display: block;
+  height: 258px;
+  background: url(../img/service_analytics.png) center no-repeat;
+  background-size: contain;
+  transition: all 0.3s ease;
+}
+
+#service_analytics:hover {
+  background-image: url(../img/service_analytics_h.png);
+  transition: all 0.3s ease;
+}
+
+.users-button {
+  background-color: #4e4e4e;
+  border: medium none currentColor;
+  border-radius: 2px;
+  color: #fff!important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Sansation Bold", "Arial";
+  font-size: 16px;
+  margin: 0px 15px 10px 0;
+  min-width: 80px;
+  max-width: 250px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none!important;
+  transition: all 0.3s ease;
+}
+
+
+
+
+/* .Content main */
