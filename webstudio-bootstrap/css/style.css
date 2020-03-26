@@ -189,63 +189,50 @@ body {
   background: url(../img/service_h3.png) center no-repeat;
   background-size: contain;
 }
-
-.users-bga {
-  height: 100%;
-}
-#service_id {
-  /* margin: 30px auto; */
+#service_id,
+#service_dev,
+#service_analytics {
+  margin: 30px auto;
   display: block;
-  /* height: 258px; */
-  /* background: url(../img/service_id.png) center no-repeat; */
-  /*background-size: contain; */
-  /* The image used*/
-  background-image: url("../img/service_id.png");
+  height: 258px;  
+  transition: all 0.3s ease;
+}
 
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
+#service_id {
+  background: url(../img/service_id.png) center no-repeat;
   background-size: contain;
+}
+
+#service_dev {
+  background: url(../img/service_dev.png) center no-repeat;
+  background-size: contain;
+}
+
+#service_analytics {
+  background: url(../img/service_analytics.png) center no-repeat;
+  background-size: contain;
+}
+
+#service_id:hover,
+#service_dev:hover,
+#service_analytics:hover {
   transition: all 0.3s ease;
 }
 
 #service_id:hover {
   background-image: url(../img/service_id_h.png);
-  transition: all 0.3s ease;
-}
-
-#service_dev {
-  margin: 30px auto;
-  display: block;
-  height: 258px;
-  background: url(../img/service_dev.png) center no-repeat;
-  background-size: contain;
-  transition: all 0.3s ease;
 }
 
 #service_dev:hover {
   background-image: url(../img/service_dev_h.png);
-  transition: all 0.3s ease;
-}
-
-#service_analytics {
-  margin: 30px auto;
-  display: block;
-  height: 258px;
-  background: url(../img/service_analytics.png) center no-repeat;
-  background-size: contain;
-  transition: all 0.3s ease;
 }
 
 #service_analytics:hover {
   background-image: url(../img/service_analytics_h.png);
-  transition: all 0.3s ease;
 }
 
 .users-btn-hover-servise {
+  font-family: "Sansation Bold", "Arial";
   transition: all 0.3s ease;
 }
 
