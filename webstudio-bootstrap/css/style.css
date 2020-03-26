@@ -172,7 +172,8 @@ body {
 }
 
 /* Content main */
-#services h4 {
+#services h4,
+.users-h4 {
   color: #323232;
   font-family: "Sansation Bold", "Arial";
 }
@@ -264,6 +265,15 @@ body {
   color: white;
 }
 /* /State */
+
+/* Works */
+.users-card-body h4 {
+  color: #048300;
+}
+.users-card-body p {
+  color: #7e7e7e;
+}
+/* /Works */
 
 
 
