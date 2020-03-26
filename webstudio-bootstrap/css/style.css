@@ -241,6 +241,30 @@ body {
   transition: all 0.3s ease;
 }
 
+/* State */
+.state {
+  background-color: #127E12;
+  /* height: 160px; */
+  /* padding-top: 70px; */
+  background: url(../img/state_bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.state .num {
+  /* font-size: 2rem; */
+  font-family: "Sansation Bold", "Arial";
+  border-top: 3px solid #379535;
+  border-bottom: 3px solid #379535;
+  /* padding: 10px 0; */
+  /* margin: 0 auto; */
+}
+
+.state span {
+  display: block;
+  color: white;
+}
+/* /State */
+
 
 
 
