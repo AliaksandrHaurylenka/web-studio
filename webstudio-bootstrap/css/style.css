@@ -232,21 +232,12 @@ body {
   transition: all 0.3s ease;
 }
 
-.users-button {
-  background-color: #4e4e4e;
-  border: medium none currentColor;
-  border-radius: 2px;
-  color: #fff!important;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Sansation Bold", "Arial";
-  font-size: 16px;
-  margin: 0px 15px 10px 0;
-  min-width: 80px;
-  max-width: 250px;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none!important;
+.users-btn-hover-servise {
+  transition: all 0.3s ease;
+}
+
+.users-btn-hover-servise:hover {
+  background-color: #047e00 !important;
   transition: all 0.3s ease;
 }
 
