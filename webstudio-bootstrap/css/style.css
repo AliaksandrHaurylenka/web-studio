@@ -329,6 +329,8 @@ body {
   background-color: #fff;
   font-family: "Sansation Bold", "Arial";
   color: #868686;
+  border-top: solid 1px #e6e7e8;
+  border-bottom: solid 1px #e6e7e8;
 }
 .users-breadcrumb a {
   color: #b1b1b1;
