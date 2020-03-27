@@ -17,12 +17,34 @@
       url(../fonts/Sansation_Bold.ttf);
 }
 
+html, body {
+  line-height: 1.4;
+  height: 100%;
+}
 
 body {
   background-color: #fff;
   background-image: url('../img/top.jpg');
   background-position: top center;
   background-repeat: repeat-x;
+}
+
+/* flex футер прижатый к низу https://codepen.io/Asmodey/pen/GqrVNX */
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+.footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  margin-top: 1rem;
 }
 
 /* Navbar */
