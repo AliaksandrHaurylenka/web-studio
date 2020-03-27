@@ -37,7 +37,7 @@ body {
   color: #7e7e7e;
 }
 
-#menu li a:hover, #menu li a.active {
+#menu li a:hover, #menu li a span.active {
   color: #191919;
 }
 
@@ -55,13 +55,13 @@ body {
 .icon_blog { background-position: -126px 0px; }
 .icon_contacts { background-position: -168px 0px; }
 
-#menu li a:hover .icon_works, #menu li a.active .icon_works { background-position: 0px -42px; }
-#menu li a:hover .icon_about, #menu li a.active .icon_about { background-position: -42px -42px; }
-#menu li a:hover .icon_services, #menu li a.active .icon_services { background-position: -84px -42px; }
-#menu li a:hover .icon_blog, #menu li a.active .icon_blog { background-position: -126px -42px; }
-#menu li a:hover .icon_contacts, #menu li a.active .icon_contacts { background-position: -168px -42px; }
+#menu li a:hover .icon_works, #menu li a span.active .icon_works { background-position: 0px -42px; }
+#menu li a:hover .icon_about, #menu li a span.active .icon_about { background-position: -42px -42px; }
+#menu li a:hover .icon_services, #menu li a span.active .icon_services { background-position: -84px -42px; }
+#menu li a:hover .icon_blog, #menu li a span.active .icon_blog { background-position: -126px -42px; }
+#menu li a:hover .icon_contacts, #menu li a span.active .icon_contacts { background-position: -168px -42px; }
 
-#menu li a.active, .logo {
+#menu li a span.active, .logo {
   display: inline-block;
   position: relative;
   -webkit-transition-duration: 0.3s;
@@ -87,7 +87,7 @@ body {
   animation-direction: alternate;
 }
 
-#menu li a.active:before, .active:focus:before, .active:active:before, .logo:before, .logo:focus:before, .logo:active:before {
+#menu li a span.active:before, .active:focus:before, .active:active:before, .logo:before, .logo:focus:before, .logo:active:before {
   pointer-events: none;
   position: absolute;
   z-index: -1;
@@ -323,5 +323,14 @@ body {
 /* Content Pages */
 .users-h4-pages {
   color: #127E12;
+}
+
+.users-h5 {
+  color: #127E12;
+  font-family: "Sansation Bold", "Arial";
+}
+
+.users-ul-circle {
+  list-style: circle;
 }
 /* /.Content Pages */
