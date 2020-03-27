@@ -270,6 +270,9 @@ body {
 }
 /* /.Works */
 
+/* .Content main */
+
+
 /* Footer */
 .footer {
   background-image: url(../img/footer_bg.jpg);
@@ -285,7 +288,40 @@ body {
 }
 /* /.Footer */
 
+/* Breadcrumbs */
+.font-up-bold .breadcrumb-item + .breadcrumb-item::before {
+  content: none; 
+}
+.font-up-bold .breadcrumb-item a h5::after {
+  content: "/";
+  margin-left: .5rem;
+  color: #868686;
+}
+.font-up-bold .breadcrumb-item a h5::before {
+  content: "//";
+  margin-right: .5rem;
+  color: #868686;
+}
 
+.users-breadcrumb {
+  background-color: #fff;
+  font-family: "Sansation Bold", "Arial";
+  color: #868686;
+}
+.users-breadcrumb a {
+  color: #b1b1b1;
+}
+.users-breadcrumb a:hover {
+  color: #127E12;
+}
 
+.users-breadcrumb .active {
+  padding-left: 0;
+}
+/* /.Breadcrumbs */
 
-/* .Content main */
+/* Content Pages */
+.users-h4-pages {
+  color: #127E12;
+}
+/* /.Content Pages */
