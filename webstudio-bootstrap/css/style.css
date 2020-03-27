@@ -245,35 +245,45 @@ body {
 /* State */
 .state {
   background-color: #127E12;
-  /* height: 160px; */
-  /* padding-top: 70px; */
   background: url(../img/state_bg.jpg) center no-repeat;
   background-size: cover;
 }
 
 .state .num {
-  /* font-size: 2rem; */
   font-family: "Sansation Bold", "Arial";
   border-top: 3px solid #379535;
   border-bottom: 3px solid #379535;
-  /* padding: 10px 0; */
-  /* margin: 0 auto; */
 }
 
 .state span {
   display: block;
   color: white;
 }
-/* /State */
+/* /.State */
 
 /* Works */
 .users-card-body h4 {
-  color: #048300;
+  color: #127E12;
 }
 .users-card-body p {
   color: #7e7e7e;
 }
-/* /Works */
+/* /.Works */
+
+/* Footer */
+.footer {
+  background-image: url(../img/footer_bg.jpg);
+}
+
+.fab {
+  transition: all 0.3s ease;
+}
+
+.fab:hover {
+  color: #127E12 !important;
+  transition: all 0.3s ease;
+}
+/* /.Footer */
 
 
 
