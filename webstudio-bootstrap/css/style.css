@@ -33,6 +33,10 @@ body {
   font-family: "Sansation Bold", "Arial";
 }
 
+.color-site {
+  color: #127E12 !important;
+}
+
 /* flex футер прижатый к низу https://codepen.io/Asmodey/pen/GqrVNX */
 .wrap {
   display: flex;
@@ -377,6 +381,10 @@ body {
 }
 
 .service-text {
+  font-size: .9rem;
+}
+
+.fs-09 {
   font-size: .9rem;
 }
 /* /.Services */
