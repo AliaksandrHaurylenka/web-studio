@@ -29,6 +29,10 @@ body {
   background-repeat: repeat-x;
 }
 
+.font {
+  font-family: "Sansation Bold", "Arial";
+}
+
 /* flex футер прижатый к низу https://codepen.io/Asmodey/pen/GqrVNX */
 .wrap {
   display: flex;
@@ -357,4 +361,24 @@ body {
 .users-ul-circle {
   list-style: circle;
 }
+
+/* Services */
+.what-we-do {
+  color: #868686;
+}
+
+.what-we-do ul {
+  list-style: square;
+}
+
+.what-we-do ul li {
+  line-height: 1.5rem;
+  font-size: .9rem;
+}
+
+.service-text {
+  font-size: .9rem;
+}
+/* /.Services */
+
 /* /.Content Pages */
