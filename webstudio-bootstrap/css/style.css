@@ -36,6 +36,25 @@ body {
 .color-site {
   color: #127E12 !important;
 }
+.bg-site {
+  background-color:#127E12 !important;
+}
+
+.a-hover:hover {
+  text-decoration: none;
+}
+
+.a-underline {
+  text-decoration: underline;
+}
+
+.fs-1 {
+  font-size: 1rem !important;
+}
+
+.fs-09 {
+  font-size: .9rem !important;
+}
 
 /* flex футер прижатый к низу https://codepen.io/Asmodey/pen/GqrVNX */
 .wrap {
@@ -327,7 +346,8 @@ body {
   margin-left: .5rem;
   color: #868686;
 }
-.font-up-bold .breadcrumb-item a h5::before {
+/* .font-up-bold .breadcrumb-item a h5::before { */
+.font-up-bold .breadcrumb-item:first-child a h5::before {
   content: "//";
   margin-right: .5rem;
   color: #868686;
@@ -347,9 +367,6 @@ body {
   color: #127E12;
 }
 
-.users-breadcrumb .active {
-  padding-left: 0;
-}
 /* /.Breadcrumbs */
 
 /* Content Pages */
@@ -385,8 +402,14 @@ body {
 }
 
 .fs-09 {
-  font-size: .9rem;
+  font-size: .9rem !important;
 }
 /* /.Services */
+
+/* Website */
+.bq-color-site {
+  border-left: 3px solid #127E12 !important;;
+}
+/* /.Website */
 
 /* /.Content Pages */
