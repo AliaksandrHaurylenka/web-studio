@@ -36,6 +36,7 @@ body {
 .color-site {
   color: #127E12 !important;
 }
+
 .bg-site {
   background-color:#127E12 !important;
 }
@@ -239,12 +240,22 @@ body {
   background: url(../img/service_h3.png) center no-repeat;
   background-size: contain;
 }
+@media (max-width: 768px) {
+  #services h6 {
+    font-size: .75rem;
+  }
+}
+@media (max-width: 567px) {
+  #services h6 {
+    font-size: 1rem;
+  }
+}
+
 #service_id,
 #service_dev,
 #service_analytics {
-  margin: 30px auto;
   display: block;
-  height: 258px;  
+  height: 200px;  
   transition: all 0.3s ease;
 }
 
@@ -381,10 +392,6 @@ body {
 }
 
 /* Services */
-.what-we-do {
-  color: #868686;
-}
-
 .what-we-do ul {
   list-style: square;
 }
