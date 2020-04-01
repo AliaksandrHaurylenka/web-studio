@@ -417,3 +417,12 @@ body {
 /* /.Website */
 
 /* /.Content Pages */
+
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  width: 35px;
+  height: 75px;
+  background: url(../img/top.png) no-repeat;
+  transition: all 0.3s ease;
+}
