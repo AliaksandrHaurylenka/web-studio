@@ -200,17 +200,17 @@ body {
   background-color: grey;
 }
 .users-carousel-indicators {
-  bottom: .7rem;
+  bottom: 1.2rem;
 }
 
 .p-05 li {
   padding: .5rem 1.25rem;
 }
 
-.users-carousel-control-prev-icon,
+/* .users-carousel-control-prev-icon,
 .users-carousel-control-next-icon {
   background-color: rgb(113, 200, 41);
-}
+} */
 
 .sline {
   /* min-width: 1200px; */
