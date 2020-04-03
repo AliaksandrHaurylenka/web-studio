@@ -151,8 +151,12 @@
             <li class="breadcrumb-item active pl-0">
               <h5 class="mr-2 mb-0"><strong>Костюковка-Спорт</strong></h5>
             </li>
+
+            <li class="form-inline my-2 my-lg-0 ml-auto">
+              <button type="button" class="btn bg-site text-white m-0 p-2" data-toggle="modal" data-target="#exampleModalCenter">Заказать сайт</button>
+            </li>
           </ol>
-        </nav>    
+        </nav>
       </div>
     </div>
     <!--/. Breadcrumbs -->
@@ -181,14 +185,13 @@
               </a>
             </div>
 
-            <p class="grey-text"><em><strong>Начало:</strong> 19/06/2020</em></p>
-            <p class="grey-text"><em><strong>Окончание:</strong> 19/08/2020</em></p>
-            <p class="grey-text"><em><strong>Бюджет:</strong> 600 руб.</em></p>
-            
-
-            <div class="text-center mb-3">
-              <a href="http://sport-kostukovka.by" target="_blank" class="btn btn-elegant btn-block users-btn-hover-servise" role="button"><i class="fas fa-eye mr-1"></i> Перейти на сайт</a>
+            <div class="row">
+              <p class="col grey-text"><em><strong>Начало:</strong> 19/06/2020</em></p>
+              <p class="col grey-text"><em><strong>Окончание:</strong> 19/08/2020</em></p>
+              <p class="col grey-text"><em><strong>Бюджет:</strong> 600 руб.</em></p>
             </div>
+
+            
 
           </div>
           <!-- Grid column -->
@@ -238,35 +241,9 @@
             <hr>
 
             
-            <button type="button" class="btn bg-site text-white btn-block" data-toggle="modal" data-target="#exampleModalCenter">Заказать сайт</button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true">
-
-              <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
-              <div class="modal-dialog modal-dialog-centered" role="document">
-
-
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
+            <div class="text-center mb-3">
+              <a href="http://sport-kostukovka.by" target="_blank" class="btn btn-elegant btn-block users-btn-hover-servise" role="button"><i class="fas fa-eye mr-1"></i> Перейти на сайт</a>
             </div>
-            
-
           </div>
           <!-- Grid column -->
 
@@ -345,13 +322,70 @@
   </footer>
   <!--/. Footer -->
 </div><!--wrap-->
-  
 
-  
 
-  
 
-  
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+aria-hidden="true">
+
+  <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- multistep form -->
+        <form id="msform">
+          <!-- progressbar -->
+          <ul id="progressbar">
+            <li class="active">Account Setup</li>
+            <li>Social Profiles</li>
+            <li>Personal Details</li>
+          </ul>
+          <!-- fieldsets -->
+          <fieldset>
+            <h2 class="fs-title">Create your account</h2>
+            <h3 class="fs-subtitle">This is step 1</h3>
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="pass" placeholder="Password" />
+            <input type="password" name="cpass" placeholder="Confirm Password" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+          </fieldset>
+          <fieldset>
+            <h2 class="fs-title">Social Profiles</h2>
+            <h3 class="fs-subtitle">Your presence on the social network</h3>
+            <input type="text" name="twitter" placeholder="Twitter" />
+            <input type="text" name="facebook" placeholder="Facebook" />
+            <input type="text" name="gplus" placeholder="Google Plus" />
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+          </fieldset>
+          <fieldset>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">We will never sell it</h3>
+            <input type="text" name="fname" placeholder="First Name" />
+            <input type="text" name="lname" placeholder="Last Name" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <textarea name="address" placeholder="Address"></textarea>
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="submit" name="submit" class="submit action-button" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+
+</div>
   
 
 
