@@ -20,6 +20,7 @@
 html, body {
   line-height: 1.4;
   height: 100%;
+  min-width: 320px;
 }
 
 body {
@@ -80,14 +81,14 @@ body {
   box-shadow: none;
 }
 
-#menu li a {
+.menu li a {
   font-family: "Sansation Bold", "Arial";
   font-size: 1em;
   text-decoration: none;
   color: #7e7e7e;
 }
 
-#menu li a:hover, #menu li a span.active {
+.menu li a:hover, .menu li a span.active {
   color: #191919;
 }
 
@@ -105,13 +106,13 @@ body {
 .icon_blog { background-position: -126px 0px; }
 .icon_contacts { background-position: -168px 0px; }
 
-#menu li a:hover .icon_works, #menu li a span.active .icon_works { background-position: 0px -42px; }
-#menu li a:hover .icon_about, #menu li a span.active .icon_about { background-position: -42px -42px; }
-#menu li a:hover .icon_services, #menu li a span.active .icon_services { background-position: -84px -42px; }
-#menu li a:hover .icon_blog, #menu li a span.active .icon_blog { background-position: -126px -42px; }
-#menu li a:hover .icon_contacts, #menu li a span.active .icon_contacts { background-position: -168px -42px; }
+.menu li a:hover .icon_works, .menu li a span.active .icon_works { background-position: 0px -42px; }
+.menu li a:hover .icon_about, .menu li a span.active .icon_about { background-position: -42px -42px; }
+.menu li a:hover .icon_services, .menu li a span.active .icon_services { background-position: -84px -42px; }
+.menu li a:hover .icon_blog, .menu li a span.active .icon_blog { background-position: -126px -42px; }
+.menu li a:hover .icon_contacts, .menu li a span.active .icon_contacts { background-position: -168px -42px; }
 
-#menu li a span.active, .logo {
+.menu li a span.active, .logo {
   display: inline-block;
   position: relative;
   -webkit-transition-duration: 0.3s;
@@ -137,7 +138,7 @@ body {
   animation-direction: alternate;
 }
 
-#menu li a span.active:before, .active:focus:before, .active:active:before, .logo:before, .logo:focus:before, .logo:active:before {
+.menu li a span.active:before, .active:focus:before, .active:active:before, .logo:before, .logo:focus:before, .logo:active:before {
   pointer-events: none;
   position: absolute;
   z-index: -1;
@@ -349,14 +350,21 @@ body {
 .font-up-bold .breadcrumb-item + .breadcrumb-item::before {
   content: none; 
 }
-.font-up-bold .breadcrumb-item a h5::after {
+.font-up-bold .breadcrumb-item a h5::after{
+/* .font-up-bold .breadcrumb-item h5.dropdown-toggle::after { */
   content: "/";
   margin-left: .5rem;
   color: #868686;
 }
-/* .font-up-bold .breadcrumb-item a h5::before { */
+
 .font-up-bold .breadcrumb-item:first-child a h5::before {
   content: "//";
+  margin-right: .5rem;
+  color: #868686;
+}
+
+.font-up-bold .breadcrumb-item .slash-to::before {
+  content: "/";
   margin-right: .5rem;
   color: #868686;
 }
@@ -373,6 +381,16 @@ body {
 }
 .users-breadcrumb a:hover {
   color: #127E12;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #127E12;
+}
+
+.dropdown-item.active:hover {
+  color: #fff;
 }
 
 /* /.Breadcrumbs */
