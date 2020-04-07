@@ -255,9 +255,9 @@
       <!-- News jumbotron -->
 
       <blockquote class="blockquote bq-color-site">
-        <p class="fs-1 p-0"><em>Сайт разработан на некоммерческой основе.</em></p>
-        <p class="fs-1 p-0"><em>Основные навигационные вкладки сайта показывают все виды спорта, которыми занимаются дети микрорайна Костюковка города Гомеля.</em></p>
-        <p class="fs-1 p-0"><em>Дополнительные вкладки рассказывают об истории комплекса, предоставляемые услуги, расписание и другая полезная информация для жителей микрорайона.</em></p>
+        <p class="p-0"><em>Сайт разработан на некоммерческой основе.</em></p>
+        <p class="p-0"><em>Основные навигационные вкладки сайта показывают все виды спорта, которыми занимаются дети микрорайна Костюковка города Гомеля.</em></p>
+        <p class="p-0"><em>Дополнительные вкладки рассказывают об истории комплекса, предоставляемые услуги, расписание и другая полезная информация для жителей микрорайона.</em></p>
       </blockquote>
     </section>
     <!--/. Works -->
@@ -333,30 +333,74 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Бриф на создание сайта</h4>
+        <h4 class="modal-title w-100 font-weight-bold font">Бриф на создание сайта</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body mx-3">
+        <div class="tab">
+          <p class="font-large">Выявление полного спектра требований и пожеланий клиента к разрабатываемому сайту – достаточно длительный процесс. К счастью, его можно заметно ускорить, сводя к минимуму разговоры и существенно экономя Ваше время. С этой целью мы предлагаем Вам заполнить бриф на создание сайта.</p>
+
+          <p><strong>Бриф</strong> - это своего рода анкета, с помощью которой Вы сможете отобразить свои требования и пожелания к сайту, который Вы хотите заказать. Заполнив бриф, Вы не только лишний раз проанализируете будущий проект, но и будете четко представлять себе его окончательный вид. Качественно заполненный бриф – экономит массу времени, расходуемое, как правило, на  согласовании деталей.</p>
+
+          <blockquote class="blockquote bq-color-site">
+            <p><em>Пожалуйста, отвечайте на вопросы развернуто, в свободной форме, внимательно вчитываясь в каждый вопрос. На основе этого брифа будет составлено техническое задание, являющееся приложением договора, по которому будет вестись работа над Вашим проектом.</em></p>
+          </blockquote>
+          <blockquote class="blockquote bq-color-site">
+            <p><em>Помните! Сделать действительно точную оценку стоимости услуг можно только после получения подробного описания задачи на создание сайта с перечнем всех самых важных моментов и требований, которые разработчику следует учитывать. От того, насколько детально будет поставлена задача исполнителю, напрямую зависит как качество результата, так и душевное спокойствие сторон в процессе работы.</em></p>
+          </blockquote>
+        </div>
+        
+
         <form id="regForm" action="" method="post">
-          <div class="md-form mb-5 tab">
-            <i class="fas fa-user prefix grey-text"></i>
-            <input type="text" id="form34" class="form-control validate" name="name">
-            <label data-error="wrong" data-success="right" for="form34">Ваше имя</label>
-          </div>
+          <div class="tab">
+            <h4 class="modal-title w-100">1. Информация о компании</h4>
+            <div class="md-form mb-5">
+              <i class="fas fa-building prefix grey-text"></i>
+              <input type="text" id="form1" class="form-control" name="name-company">
+              <label for="form1">Название компании</label>
+            </div>
+              
+            <div class="md-form mb-5">
+              <i class="fas fa-user prefix grey-text"></i>
+              <input type="text" id="form2" class="form-control" name="name">
+              <label for="form2">Представитель компании (заказчик)</label>
+            </div>
+            
+            <div class="md-form mb-5">  
+              <i class="fas fa-envelope prefix grey-text"></i>
+              <input type="email" id="form3" class="form-control" name="email">
+              <label for="form3">Email</label>
+            </div>
 
-          <div class="md-form mb-5 tab">
-            <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="email" id="form29" class="form-control validate" name="email">
-            <label data-error="wrong" data-success="right" for="form29">Ваш email</label>
-          </div>
+            <div class="md-form mb-5">  
+              <i class="fas fa-phone-alt prefix grey-text"></i>
+              <input type="tel" id="form4" class="form-control" name="phone">
+              <label for="form4">Телефон</label>
+            </div>
 
-          <div class="md-form mb-5 tab">
-            <i class="fas fa-tag prefix grey-text"></i>
-            <input type="text" id="form32" class="form-control validate" name="subject">
-            <label data-error="wrong" data-success="right" for="form32">Тема</label>
+            <div class="md-form mb-5">  
+              <i class="fas fa-sitemap prefix grey-text"></i>
+              <input type="url" id="form5" class="form-control" name="address-site">
+              <label for="form5">Существующий сайт (если есть)</label>
+            </div>
+
+            <div class="md-form mb-5">  
+              <i class="fas fa-map-marked-alt prefix grey-text"></i>
+              <input type="url" id="form6" class="form-control" name="planned-address-site">
+              <label for="form6">Планируемый адрес сайта</label>
+            </div>
+
+            <div class="md-form mb-5">  
+              <i class="fas fa-calendar-alt prefix grey-text"></i>
+              <input type="date" id="form7" class="form-control" name="desired-project-completion-date">
+              <label for="form7">Желаемая дата сдачи проекта</label>
+            </div>
           </div>
+          
+
+          
 
           <div class="md-form tab">
             <i class="fas fa-pencil prefix grey-text"></i>
