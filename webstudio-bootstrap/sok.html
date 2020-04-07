@@ -351,11 +351,57 @@
             <p><em>Помните! Сделать действительно точную оценку стоимости услуг можно только после получения подробного описания задачи на создание сайта с перечнем всех самых важных моментов и требований, которые разработчику следует учитывать. От того, насколько детально будет поставлена задача исполнителю, напрямую зависит как качество результата, так и душевное спокойствие сторон в процессе работы.</em></p>
           </blockquote>
         </div>
+
+        <form id="regForm" action="" method="post">
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault01">First name</label>
+              <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark"
+                required>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault02">Last name</label>
+              <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto"
+                required>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefaultUsername">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupPrepend21">@</span>
+                </div>
+                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username"
+                  aria-describedby="inputGroupPrepend21" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationDefault03">City</label>
+              <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationDefault04">State</label>
+              <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationDefault05">Zip</label>
+              <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="invalidCheck12" required>
+              <label class="custom-control-label" for="invalidCheck">Agree to terms and conditions</label>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-sm" type="submit">Submit form</button>
+        </form>
         
 
         <form id="regForm" action="" method="post">
           <div class="tab">
-            <h4 class="modal-title w-100">1. Информация о компании</h4>
+            <h4 class="w-100">1. Информация о компании</h4>
             <div class="md-form mb-5">
               <i class="fas fa-building prefix grey-text"></i>
               <input type="text" id="form1" class="form-control" name="name-company">
