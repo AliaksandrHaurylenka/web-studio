@@ -1,0 +1,170 @@
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title h4-responsive w-100 font-weight-bold font">Бриф на создание сайта</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="tab">
+          <p class="font-large">Выявление полного спектра требований и пожеланий клиента к разрабатываемому сайту – достаточно длительный процесс. К счастью, его можно заметно ускорить, сводя к минимуму разговоры и существенно экономя Ваше время. С этой целью мы предлагаем Вам заполнить бриф на создание сайта.</p>
+
+          <p><strong>Бриф</strong> - это своего рода анкета, с помощью которой Вы сможете отобразить свои требования и пожелания к сайту, который Вы хотите заказать. Заполнив бриф, Вы не только лишний раз проанализируете будущий проект, но и будете четко представлять себе его окончательный вид. Качественно заполненный бриф – экономит массу времени, расходуемое, как правило, на  согласовании деталей.</p>
+
+          <blockquote class="blockquote bq-color-site">
+            <p><em>Пожалуйста, отвечайте на вопросы развернуто, в свободной форме, внимательно вчитываясь в каждый вопрос. На основе этого брифа будет составлено техническое задание, являющееся приложением договора, по которому будет вестись работа над Вашим проектом.</em></p>
+          </blockquote>
+          <blockquote class="blockquote bq-color-site">
+            <p><em>Помните! Сделать действительно точную оценку стоимости услуг можно только после получения подробного описания задачи на создание сайта с перечнем всех самых важных моментов и требований, которые разработчику следует учитывать. От того, насколько детально будет поставлена задача исполнителю, напрямую зависит как качество результата, так и душевное спокойствие сторон в процессе работы.</em></p>
+          </blockquote>
+        </div>
+
+        <form id="regForm" action="" method="post">
+          <!-- 1 -->
+          <div class="tab">
+            <h4 class="h4-responsive w-100">1. Информация о компании</h4>
+            <div class="md-form mb-5">
+              <i class="fas fa-building prefix grey-text"></i>
+              <input type="text" id="form1" class="form-control" name="name-company">
+              <label for="form1">Название компании</label>
+            </div>
+              
+            <div class="md-form mb-5">
+              <i class="fas fa-user prefix grey-text"></i>
+              <input type="text" id="form2" class="form-control" name="name">
+              <label for="form2">Представитель компании (заказчик)</label>
+            </div>
+            
+            <div class="md-form mb-5">  
+              <i class="fas fa-envelope prefix grey-text"></i>
+              <input type="email" id="form3" class="form-control" name="email">
+              <label for="form3">Email</label>
+            </div>
+
+            <div class="md-form mb-5">  
+              <i class="fas fa-phone-alt prefix grey-text"></i>
+              <input type="tel" id="form4" class="form-control" name="phone">
+              <label for="form4">Телефон</label>
+            </div>
+
+            <div class="md-form mb-5">  
+              <i class="fas fa-sitemap prefix grey-text"></i>
+              <input type="url" id="form5" class="form-control" name="address-site">
+              <label for="form5">Существующий сайт (если есть)</label>
+            </div>
+
+            <div class="md-form mb-5">  
+              <i class="fas fa-map-marked-alt prefix grey-text"></i>
+              <input type="url" id="form6" class="form-control" name="planned-address-site">
+              <label for="form6">Планируемый адрес сайта</label>
+            </div>
+
+            <div class="md-form mb-5">  
+              <i class="fas fa-calendar-alt prefix grey-text"></i>
+              <input type="date" id="form7" class="form-control" name="desired-project-completion-date">
+              <label for="form7">Желаемая дата сдачи проекта</label>
+            </div>
+          </div>
+
+
+         <!-- 2 -->
+         <div class="tab">
+          <h4 class="h4-responsive w-100">2. Информация об услугах</h4>
+
+          <h5 class="h5-responsive">Целевая группа воздействия</h5>
+          <div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked1" name="auditoriumGroup[]" value="A">
+              <label class="custom-control-label" for="defaultChecked1">владельцы бизнеса</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked2" name="auditoriumGroup[]" value="B">
+              <label class="custom-control-label" for="defaultChecked2">директоры</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked3" name="auditoriumGroup[]" value="C">
+              <label class="custom-control-label" for="defaultChecked3">менеджеры</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked4" name="auditoriumGroup[]" value="D">
+              <label class="custom-control-label" for="defaultChecked4">технические работник, рабочие</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked5" name="auditoriumGroup[]" value="E">
+              <label class="custom-control-label" for="defaultChecked5">научные работники, профессоры, студенты</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked6" name="auditoriumGroup[]" value="F">
+              <label class="custom-control-label" for="defaultChecked6">домохозяйки</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked7" name="auditoriumGroup[]" value="G">
+              <label class="custom-control-label" for="defaultChecked7">дети</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked8" name="auditoriumGroup[]" value="H">
+              <label class="custom-control-label" for="defaultChecked8">все категории общества</label>
+            </div>
+
+            <div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultCheckedDisabled2" checked disabled>
+                <label class="custom-control-label" for="defaultCheckedDisabled2">другое (описать)</label>
+              </div>
+              <textarea type="text" id="form8" class="md-textarea form-control" rows="2" name="auditoriumGroupOther"></textarea>
+            </div>
+          </div>
+
+          <div class="md-form">
+            <textarea type="text" id="form8" class="md-textarea form-control" rows="2" name="infoAboutProducts"></textarea>
+            <label for="form8">Информация о продуктах</label>
+          </div>
+
+          <div class="md-form">
+            <input type="url" id="form9" class="form-control" rows="2" name="competitors">
+            <label for="form9">Конкуренты в сфере деятельности (ссылки)</label>
+          </div>
+
+          <div class="md-form">
+            <input type="url" id="form10" class="form-control" rows="2" name="companions">
+            <label for="form10">Компаньоны в сфере деятельности (ссылки)</label>
+          </div>
+
+          <div class="md-form">
+            <textarea type="text" id="form11" class="md-textarea form-control" rows="2" name="purpose"></textarea>
+            <label for="form11">Цели создания сайта</label>
+          </div>
+        </div>
+          
+
+          
+
+          
+          <div style="overflow:auto;">
+            <div style="float:right;">
+              <button class="btn text-white m-0 p-2" type="button" id="prevBtn" onclick="nextPrev(-1)">Предыдущая</button>
+              <button class="btn bg-site text-white m-0 p-2" type="button" id="nextBtn" onclick="nextPrev(1)">Следующая</button>
+            </div>
+          </div>
+
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
