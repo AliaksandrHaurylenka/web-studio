@@ -58,6 +58,10 @@ body {
   font-size: .9rem !important;
 }
 
+.fs-12 {
+  font-size: 1.2rem !important;
+}
+
 /* flex футер прижатый к низу https://codepen.io/Asmodey/pen/GqrVNX */
 .wrap {
   display: flex;
