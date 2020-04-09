@@ -379,13 +379,12 @@ body {
 .users-breadcrumb a {
   color: #b1b1b1;
 }
+
 .users-breadcrumb a:hover {
   color: #127E12;
 }
 
 .dropdown-item.active, .dropdown-item:active {
-  color: #fff;
-  text-decoration: none;
   background-color: #127E12;
 }
 
