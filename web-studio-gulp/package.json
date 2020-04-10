@@ -12,6 +12,10 @@
     "gulp": "^4.0.2"
   },
   "dependencies": {
-    "gulp-pug": "^4.0.1"
+    "gulp-html-bem-validator": "^1.0.5",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-pug-linter": "^1.3.0",
+    "gulp-w3c-html-validator": "^2.0.0"
   }
 }
