@@ -1,0 +1,26 @@
+doctype html
+html(lang="ru")
+  block head
+    head
+      meta(charset="UTF-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+      meta(http-equiv="x-ua-compatible" content="ie=edge")
+      meta(name="description" content="Разработка, продвижение и дизайн сайтов. Верстка сайтов HTML, CSS, PHP/MySQL, фреймворк Yii2, Laravel, cms Wordpress, Joomla.")
+      meta(meta name="keywords" content="Веб разработка, дизайн, продвижение.")
+      title Web-freelance
+      link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
+      link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css")
+      link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap")
+      link(rel="stylesheet" href="css/bootstrap.min.css")
+      link(rel="stylesheet" href="css/mdb_pro.min.css")
+      link(rel="stylesheet" href="css/hover.css")
+      link(rel="stylesheet" href="css/style.css")
+
+  body
+    block header
+      include header
+    block content
+    block footer
+      include footer
+    block scripts
+      script(src='js/script.js')
