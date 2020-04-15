@@ -1,9 +1,9 @@
 - 
   let navLinks =  [
-    {link: "works.html", name: "Работы", class: "nav-item"},
-    {link: "about.html", name: "О нас", class: "nav-item ml-md-3"},
-    {link: "services.html", name: "Услуги", class: "nav-item ml-md-3"},
-    {link: "contacts.html", name: "Контакты", class: "nav-item ml-md-3"}
+    {link: "works.html", name: "Работы", li_class: "", icon: "icon_works"},
+    {link: "about.html", name: "О нас", li_class: "ml-md-3", icon: "icon_about"},
+    {link: "services.html", name: "Услуги", li_class: "ml-md-3", icon: "icon_services"},
+    {link: "contacts.html", name: "Контакты", li_class: "ml-md-3", icon: "icon_contacts"}
   ]
 mixin headerNav(className, numberId, links, tel)
   header(class=className)
@@ -18,10 +18,10 @@ mixin headerNav(className, numberId, links, tel)
       div(class="collapse navbar-collapse" id=`navbarSupportedContent-${numberId}`)
         ul.navbar-nav.ml-auto.menu
           each i in links
-            li(class=i.class)
+            li(class="nav-item" + " " + i.li_class)
               a(href=i.link).nav-link=i.name
                 span.float-shadow
-                  span.icon.icon_about.d-none.d-md-block
+                  span(class="icon d-none d-md-block" + " " + i.icon)
 
 block header
   <!-- Navbar -->
