@@ -1,20 +1,30 @@
-block variables
-  - const navLinks = [{link: "works.html", name: "Работы"},{link: "about.html", "О нас"}]
-
-mixin headerNav(className, numberId, navLinks)
+- 
+  let navLinks =  [
+    {link: "works.html", name: "Работы", class: "nav-item"},
+    {link: "about.html", name: "О нас", class: "nav-item ml-md-3"},
+    {link: "services.html", name: "Услуги", class: "nav-item ml-md-3"},
+    {link: "contacts.html", name: "Контакты", class: "nav-item ml-md-3"}
+  ]
+mixin headerNav(className, numberId, links, tel)
   header(class=className)
     nav(class="mb-1 mt-3 navbar users-navbar navbar-expand-md navbar-light")
       a(class="navbar-brand shadow-radial" href="index.html")
-        img(src="img/logo.png" class="img-fluid" alt="logo")
+            img(src="img/logo.png" class="img-fluid" alt="logo")
       button(class="navbar-toggler" type="button" data-toggle="collapse" data-target=`#navbarSupportedContent-${numberId}`)
-        span(class="navbar-toggler-icon")
+            span(class="navbar-toggler-icon")
+      if (tel)
+        a(href="tel:+375293487688").btn-floating.btn-lg.bg-site.d-block.d-sm-none
+          i.fas.fa-phone-alt
       div(class="collapse navbar-collapse" id=`navbarSupportedContent-${numberId}`)
-        ul(class="navbar-nav ml-auto menu")
-          each i in navLinks
-            li.nav-item
+        ul.navbar-nav.ml-auto.menu
+          each i in links
+            li(class=i.class)
               a(href=i.link).nav-link=i.name
+                span.float-shadow
+                  span.icon.icon_about.d-none.d-md-block
 
 block header
   <!-- Navbar -->
-  +headerNav("container d-none d-lg-block", 1, navLinks)
+  +headerNav("container d-none d-lg-block", 1, navLinks, tel=false)
+  +headerNav("container-fluid d-block d-lg-none", 2, navLinks, tel=true)
   <!-- /. Navbar -->

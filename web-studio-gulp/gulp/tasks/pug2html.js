@@ -13,4 +13,4 @@ module.exports = function pug2html(cb) {
     .pipe(htmlValidator())
     .pipe(bemValidator())
     .pipe(gulp.dest('build'));
-}
+};
