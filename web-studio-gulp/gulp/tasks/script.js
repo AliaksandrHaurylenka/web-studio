@@ -6,7 +6,7 @@ const rename = require('gulp-rename')
 const sourcemaps = require('gulp-sourcemaps')
 
 module.exports = function script() {
-  return gulp.src('src/js/main.js')
+  return gulp.src('src/js/*.js')
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(sourcemaps.init())
