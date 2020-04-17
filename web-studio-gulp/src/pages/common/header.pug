@@ -20,8 +20,9 @@ mixin headerNav(className, numberId, links, tel)
           each i in links
             li(class="nav-item" + " " + i.li_class)
               a(href=i.link).nav-link
-                span.float-shadow=i.name
+                span.float-shadow
                   span(class="icon d-none d-md-block" + " " + i.icon)
+                  span=i.name
 
 block header
   +headerNav("container d-none d-lg-block", 1, navLinks, tel=false)

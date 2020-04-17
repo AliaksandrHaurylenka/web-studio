@@ -1,13 +1,29 @@
 -
   let metrics = [
-    {name: "Yandex.Metrics", metric: "!#"},
-    {name: "Google.Metrics", metric: "!#"}
+    {name: "Yandex.Metrics", metric: "#!"},
+    {name: "Google.Metrics", metric: "#!"}
+  ]
+
+-
+  let socials = [
+    {link: "#!", ic: "fb-ic", icon: "fa-facebook"},
+    {link: "#!", ic: "tw-ic", icon: "fa-twitter"},
+    {link: "#!", ic: "gplus-ic", icon: "fa-google-plus-g"},
+    {link: "#!", ic: "li-ic", icon: "fa-linkedin-in"},
+    {link: "#!", ic: "ins-ic", icon: "fa-instagram"},
+    {link: "#!", ic: "vk-ic", icon: "fa-vk"}
   ]
 
 block foter
   footer.footer.page-footer.font-small
     .footer-copyright.text-center.py-3=`© 2017 - 2020 Авторское право:`
       a(href="index.html")=` Web-freelance.by`
+    .row
+      .col-md-12.pb-3
+        .flex-center
+          each item in socials
+            a(href=item.link class=item.ic)
+              i(class="fab fa-lg white-text mr-md-5 mr-3 fa-2x" + " " + item.icon)
     .mb-4.text-center
       each count in metrics
         a(href=count.metric role="button").btn.btn-outline-white=count.name

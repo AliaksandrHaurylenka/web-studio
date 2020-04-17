@@ -9,7 +9,7 @@ module.exports = function pug2html(cb) {
   return gulp.src('src/pages/*.pug')
     .pipe(plumber())
     .pipe(pugLinter({ reporter: 'default' }))
-    .pipe(pug())
+    .pipe(pug({pretty: true}))
     .pipe(htmlValidator())
     .pipe(bemValidator())
     .pipe(gulp.dest('build'));

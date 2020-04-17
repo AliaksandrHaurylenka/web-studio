@@ -18,8 +18,8 @@
 }  
 .fab {
   transition: all 0.3s ease;
-  &hover {
+  &:hover {
     color: #127E12 !important;
     transition: all 0.3s ease;
   }
-  }
+}
