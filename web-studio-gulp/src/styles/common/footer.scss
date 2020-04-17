@@ -1,0 +1,25 @@
+/* flex футер прижатый к низу https://codepen.io/Asmodey/pen/GqrVNX */
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+.footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  margin-top: 1rem;
+  background-image: url(../img/footer_bg.jpg);
+}  
+.fab {
+  transition: all 0.3s ease;
+  &hover {
+    color: #127E12 !important;
+    transition: all 0.3s ease;
+  }
+  }

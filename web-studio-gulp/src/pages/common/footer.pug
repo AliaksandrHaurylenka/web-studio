@@ -1,0 +1,13 @@
+-
+  let metrics = [
+    {name: "Yandex.Metrics", metric: "!#"},
+    {name: "Google.Metrics", metric: "!#"}
+  ]
+
+block foter
+  footer.footer.page-footer.font-small
+    .footer-copyright.text-center.py-3=`© 2017 - 2020 Авторское право:`
+      a(href="index.html")=` Web-freelance.by`
+    .mb-4.text-center
+      each count in metrics
+        a(href=count.metric role="button").btn.btn-outline-white=count.name

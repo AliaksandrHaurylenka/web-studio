@@ -1,25 +1,7 @@
 @import "../../local_modules/bootstrap";
 @import "../../local_modules/mdb_pro.min";
 @import "../../local_modules/hover";
-
-/* Fonts */
-@font-face {
-  font-family: Roboto Light;
-  src: local("Roboto Light"),
-      url(../fonts/Roboto_Light.ttf);
-}
-
-@font-face {
-  font-family: Roboto Regular;
-  src: local("Roboto Regular"),
-      url(../fonts/Roboto_Regular.ttf);
-}
-
-@font-face {
-  font-family: Sansation Bold;
-  src: local("Sansation Bold"),
-      url(../fonts/Sansation_Bold.ttf);
-}
+@import "../utils/fonts";
 
 html, body {
   line-height: 1.4;
@@ -32,10 +14,6 @@ body {
   background-image: url('../img/top.jpg');
   background-position: top center;
   background-repeat: repeat-x;
-}
-
-.font {
-  font-family: "Sansation Bold", "Arial";
 }
 
 .color-site {
@@ -66,23 +44,7 @@ body {
   font-size: 1.2rem !important;
 }
 
-/* flex футер прижатый к низу https://codepen.io/Asmodey/pen/GqrVNX */
-.wrap {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.content {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-}
-.footer {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: auto;
-  margin-top: 1rem;
-}
+
 
 /* Navbar */
 .users-navbar {
@@ -338,21 +300,6 @@ body {
 
 /* .Content main */
 
-
-/* Footer */
-.footer {
-  background-image: url(../img/footer_bg.jpg);
-}
-
-.fab {
-  transition: all 0.3s ease;
-}
-
-.fab:hover {
-  color: #127E12 !important;
-  transition: all 0.3s ease;
-}
-/* /.Footer */
 
 /* Breadcrumbs */
 .font-up-bold .breadcrumb-item + .breadcrumb-item::before {

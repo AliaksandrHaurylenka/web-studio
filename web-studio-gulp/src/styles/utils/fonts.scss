@@ -1,1 +1,22 @@
-// Файл для подключения нестандартных шрифтов
+/* Fonts */
+@font-face {
+    font-family: Roboto Light;
+    src: local("Roboto Light"),
+        url(../fonts/Roboto_Light.ttf);
+  }
+  
+  @font-face {
+    font-family: Roboto Regular;
+    src: local("Roboto Regular"),
+        url(../fonts/Roboto_Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Sansation Bold;
+    src: local("Sansation Bold"),
+        url(../fonts/Sansation_Bold.ttf);
+  }
+
+  .font {
+    font-family: "Sansation Bold", "Arial";
+  }
